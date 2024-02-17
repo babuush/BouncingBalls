@@ -14,9 +14,9 @@ public class TestBall {
 
         // Test getY and setY methods
         System.out.println("\nTesting getY and setY");
-        System.out.println("Initial y position" + b1.getY());
+        System.out.println("Initial y position: " + b1.getY());
         b1.setY(9.0f);
-        System.out.println("New y position" + b1.getY());
+        System.out.println("New y position: " + b1.getY());
 
         // Test getRadius and setRadius methods
         System.out.println("\nTesting getRadius and setRadius:");

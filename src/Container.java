@@ -30,15 +30,18 @@ public class Container {
     public boolean collidesWith(Ball ball) {
         if (ball.getX() - ball.getRadius() <= this.x1 || ball.getX() + ball.getRadius() >= this.x2) {
             ball.reflectHorizontal();
+            System.out.println("collide!");
             return true;
         }
         if (ball.getY() - ball.getRadius() <= this.y1 || ball.getY() + ball.getRadius() >= this.y2) {
             ball.reflectVertical();
+            System.out.println("collide!");
             return true;
         }
         return false;
     }
-    public String toString(){
-        return String.format("Container at (%d,%d) to (%d, %d)",x1,y1,x2,y2);
+
+    public String toString() {
+        return String.format("Container at (%d,%d) to (%d, %d)", x1, y1, x2, y2);
     }
 }
