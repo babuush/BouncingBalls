@@ -1,3 +1,7 @@
+/**
+ * This class tests the functionality of the Ball class by creating an instance
+ * of Ball and performing various operations on it.
+ */
 public class TestBall {
     public static void main(String[] args) {
         Ball b1 = new Ball(0, 0, 5, 2, 30);
